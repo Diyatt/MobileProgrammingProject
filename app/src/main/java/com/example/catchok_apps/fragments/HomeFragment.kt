@@ -78,14 +78,7 @@ class HomeFragment:BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflat
         val dateFormat = SimpleDateFormat("dd MMM")
         return dateFormat.format(currentDate)
     }
-    override fun onStart() {
-        super.onStart()
-        if(firebaseAuth.currentUser == null){
-            findNavController().navigate(
-                HomeFragmentDirections.actionHomeToLoginFragment()
-            )
-        }
-    }
+    
 
     private fun getAds():List<AdDao>{
         return listOf(
