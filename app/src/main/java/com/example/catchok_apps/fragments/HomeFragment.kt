@@ -79,7 +79,14 @@ class HomeFragment:BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflat
         return dateFormat.format(currentDate)
     }
 
-
+    override fun onStart() {
+        super.onStart()
+        if(firebaseAuth.currentUser == null){
+            findNavController().navigate(
+                HomeFragmentDirections.actionHomeToLoginFragment()
+            )
+        }
+    }
     private fun getAds():List<AdDao>{
         return listOf(
             AdDao(1, "Buy sport supplements", "10% discount", R.drawable.ad_1),
