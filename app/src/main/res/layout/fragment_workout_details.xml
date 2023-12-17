@@ -85,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView13"
             tools:listitem="@layout/item_recommended_workout" />
 
-        
+
         <androidx.cardview.widget.CardView
             android:id="@+id/back_btn_layout"
             android:layout_width="40dp"
