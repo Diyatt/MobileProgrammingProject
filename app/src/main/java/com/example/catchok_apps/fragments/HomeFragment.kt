@@ -78,7 +78,7 @@ class HomeFragment:BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflat
         val dateFormat = SimpleDateFormat("dd MMM")
         return dateFormat.format(currentDate)
     }
-    
+
 
     private fun getAds():List<AdDao>{
         return listOf(
