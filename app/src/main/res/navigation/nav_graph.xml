@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.catchok_apps.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_workoutsFragment"
+            app:destination="@id/workoutsFragment" />
+        <action
+            android:id="@+id/action_home_to_workoutDetailsFragment"
+            app:destination="@id/workoutDetailsFragment" />
+        <action
+            android:id="@+id/action_home_to_workoutDetailsBottomSheetFragment"
+            app:destination="@id/workoutDetailsBottomSheetFragment" />
+        <action
+            android:id="@+id/action_home_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutsFragment"
+        android:name="com.example.catchok_apps.fragments.WorkoutsFragment"
+        android:label="WorkoutsFragment" >
+        <action
+            android:id="@+id/action_workoutsFragment_to_workoutDetailsFragment"
+            app:destination="@id/workoutDetailsFragment" />
+        <action
+            android:id="@+id/action_workoutsFragment_to_workoutDetailsBottomSheetFragment"
+            app:destination="@id/workoutDetailsBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.catchok_apps.fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profile_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.catchok_apps.fragments.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/workoutDetailsFragment"
+        android:name="com.example.catchok_apps.fragments.WorkoutDetailsFragment"
+        android:label="WorkoutDetailsFragment" >
+        <argument
+            android:name="Workout"
+            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+        <action
+            android:id="@+id/action_workoutDetailsFragment_to_fullscreenFragment"
+            app:destination="@id/fullscreenFragment" />
+        <action
+            android:id="@+id/action_workoutDetailsFragment_to_workoutDetailsBottomSheetFragment"
+            app:destination="@id/workoutDetailsBottomSheetFragment" />
+        <action
+            android:id="@+id/itself"
+            app:destination="@id/workoutDetailsFragment" />
+        <action
+            android:id="@+id/action_workoutDetailsFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.example.catchok_apps.fragments.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signup_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_sign_up_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_sign_up_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.catchok_apps.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_loginFragment_to_sign_up"
+            app:destination="@id/sign_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.catchok_apps.fragments.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@+id/fullscreenFragment"
+        android:name="com.example.catchok_apps.fragments.FullscreenFragment"
+        android:label="FullscreenFragment" >
+        <argument
+            android:name="Workout_item"
+            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+    </fragment>
+    <dialog
+        android:id="@+id/workoutDetailsBottomSheetFragment"
+        android:name="com.example.catchok_apps.fragments.WorkoutDetailsBottomSheetFragment"
+        android:label="WorkoutDetailsBottomSheetFragment" >
+        <argument
+            android:name="WorkoutItem"
+            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+        <action
+            android:id="@+id/action_workoutDetailsBottomSheetFragment_to_fullscreenFragment"
+            app:destination="@id/fullscreenFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.catchok_apps.fragments.AgeFragment"
+        android:label="AgeFragment" >
+        <action
+            android:id="@+id/action_ageFragment_to_heightFragment"
+            app:destination="@id/heightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.example.catchok_apps.fragments.GenderFragment"
+        android:label="GenderFragment" >
+        <action
+            android:id="@+id/action_genderFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.example.catchok_apps.fragments.HeightFragment"
+        android:label="HeightFragment" >
+        <action
+            android:id="@+id/action_heightFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.catchok_apps.fragments.WeightFragment"
+        android:label="WeightFragment" >
+
+        <action
+            android:id="@+id/action_weightFragment_to_goalWeightFragment"
+            app:destination="@id/goalWeightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.example.catchok_apps.fragments.GoalFragment"
+        android:label="GoalFragment" >
+        <action
+            android:id="@+id/action_goalFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.example.catchok_apps.fragments.LevelFragment"
+        android:label="LevelFragment" >
+        <action
+            android:id="@+id/action_levelFragment_to_userInformationFragment"
+            app:destination="@id/userInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInformationFragment"
+        android:name="com.example.catchok_apps.fragments.UserInformationFragment"
+        android:label="UserInformationFragment" >
+        <action
+            android:id="@+id/action_userInformationFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWeightFragment"
+        android:name="com.example.catchok_apps.fragments.GoalWeightFragment"
+        android:label="GoalWeightFragment" >
+        <action
+            android:id="@+id/action_goalWeightFragment_to_goalFragment"
+            app:destination="@id/goalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedule"
+        android:name="com.example.catchok_apps.fragments.ScheduleFragment"
+        android:label="ScheduleFragment" >
+        <action
+            android:id="@+id/action_schedule_to_startWorkoutFragment"
+            app:destination="@id/startWorkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startWorkoutFragment"
+        android:name="com.example.catchok_apps.fragments.StartWorkoutFragment"
+        android:label="StartWorkoutFragment" >
+        <argument
+            android:name="workoutItem"
+            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.catchok_apps.fragments.ViewPagerFragment"
+        android:label="ViewPagerFragment" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.catchok_apps.fragments.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+</navigation>
