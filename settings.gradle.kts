@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CatchOk_Apps"
 include(":app")
- 
+
