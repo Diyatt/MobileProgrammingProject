@@ -1,46 +1,36 @@
 package com.example.catchok_apps
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.catchok_apps.ui.theme.CatchOk_AppsTheme
+import android.view.View
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
+import dagger.hilt.android.AndroidEntryPoint
+import com.example.catchok_apps.databinding.ActivityMainBinding
+import com.example.catchok_apps.utilities.BottomNavigationViewListener
 
-class MainActivity : ComponentActivity() {
+
+@AndroidEntryPoint
+class  MainActivity : AppCompatActivity(), BottomNavigationViewListener{
+    private lateinit var binding:ActivityMainBinding
+    private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
-        setContent {
-            CatchOk_AppsTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val navHostFragment = supportFragmentManager.findFragmentById(binding.navHostFragment.id) as NavHostFragment
+        navController = navHostFragment.navController
+
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navController)
     }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CatchOk_AppsTheme {
-        Greeting("Android")
+    override fun showBottomNavigationView(show: Boolean) {
+        if (show) {
+            binding.bottomNavigation.visibility = View.VISIBLE
+        } else {
+            binding.bottomNavigation.visibility = View.GONE
+        }
     }
 }
