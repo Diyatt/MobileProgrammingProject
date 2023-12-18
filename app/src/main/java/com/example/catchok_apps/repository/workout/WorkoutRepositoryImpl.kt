@@ -24,18 +24,4 @@ class WorkoutRepositoryImpl @Inject constructor(
     }
 
 
-//    private fun getMockData():List<WorkoutDto>{
-//        return listOf(
-//            WorkoutDto(1, "Workout with dumbels", Type.INTERMEDIATE, 350, 60, "Description" ),
-//            WorkoutDto(2, "Chess workout", Type.BEGINNER, 400, 15, "Description"),
-//            WorkoutDto(3, "Shoulder workout", Type.INTERMEDIATE, 400, 15, "Description"),
-//            WorkoutDto(4, "Leg workout", Type.ADVANCE, 230, 40, "Description"),
-//            )
-//    }
 }
-
-//fun ResponseBody?.getErrorMessage():String? {
-//    return try {
-//        Gson().fromJson(this?.charStream(), WorkoutApiError)
-//    }
-//}
