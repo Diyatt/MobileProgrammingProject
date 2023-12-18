@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import com.example.catchok_apps.base.BaseMessageViewHolder
 import com.example.catchok_apps.databinding.ItemMessageTrainerBinding
 import com.example.catchok_apps.databinding.ItemMessageUserBinding
+import com.example.catchok_apps.repository.gpt.model.Choice
 import java.text.SimpleDateFormat
 import java.util.Date
 

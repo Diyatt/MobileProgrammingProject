@@ -8,6 +8,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import com.example.catchok_apps.adapter.ScheduleAdapter
 import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentScheduleBinding
+import com.example.catchok_apps.firebase.SavedWorkout
 import com.example.catchok_apps.firebase.UserDao
 import java.text.SimpleDateFormat
 import java.util.Calendar

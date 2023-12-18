@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import package com.example.catchok_apps.onboarding.base.BaseFragment
+import com.example.catchok_apps.base.BaseFragment
 
 class ViewPagerAdapter(
     list: ArrayList<BaseFragment<out ViewBinding>>,

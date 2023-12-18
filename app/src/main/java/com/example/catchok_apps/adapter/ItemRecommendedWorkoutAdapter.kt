@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.example.catchok_apps.base.BaseWorkoutViewHolder
 import com.example.catchok_apps.databinding.ItemRecommendedWorkoutBinding
 import com.example.catchok_apps.fragments.titlecaseFirstChar
+import com.example.catchok_apps.repository.workout.model.Workout
 
 class ItemRecommendedWorkoutAdapter:ListAdapter<Workout, BaseWorkoutViewHolder<*>>(WorkoutDiffUtils()) {
 

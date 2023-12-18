@@ -53,7 +53,8 @@ class UserInformationFragment:BaseFragment<FragmentUserInformationBinding>(Fragm
                     nameLayout.isErrorEnabled = false
                     viewModel.name = name.text.toString()
                     ok = true
-                }if(lastname.text?.isEmpty() == true){
+                }
+                if(lastname.text?.isEmpty() == true){
                 lastnameLayout.error = "Fill up"
                 lastnameLayout.isErrorEnabled = true
                 ok = false
@@ -62,7 +63,8 @@ class UserInformationFragment:BaseFragment<FragmentUserInformationBinding>(Fragm
                 lastnameLayout.isErrorEnabled = false
                 viewModel.lastname = lastname.text.toString()
                 ok = true
-            }if(bio.text?.isEmpty() == true){
+            }
+                if(bio.text?.isEmpty() == true){
                 bioLayout.error = "Fill up"
                 bioLayout.isErrorEnabled = true
                 ok = false
@@ -72,7 +74,8 @@ class UserInformationFragment:BaseFragment<FragmentUserInformationBinding>(Fragm
                 viewModel.bio = bio.text.toString()
                 ok = true
 
-            }if(ok){
+            }
+                if(ok){
                 val user = User(
                     viewModel.name,
                     viewModel.lastname,

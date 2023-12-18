@@ -15,6 +15,7 @@ import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentWorkoutDetailsBinding
 import com.example.catchok_apps.firebase.UserDao
 import com.example.catchok_apps.repository.workout.WorkoutViewModel
+import com.example.catchok_apps.repository.workout.model.Workout
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -136,7 +137,7 @@ class WorkoutDetailsFragment:BaseFragment<FragmentWorkoutDetailsBinding>(Fragmen
     private fun getWorkouts(){
         viewModel.getWorkoutsByTarget(args.workout.target.toString().lowercase())
     }
-    private fun setUpWorkout(value:Workout){
+    private fun setUpWorkout(value: Workout){
         val datePickerDialog = DatePickerDialog(requireContext(), {DatePicker, year:Int, month:Int, day:Int ->
             val selectedDate = Calendar.getInstance()
             selectedDate.set(year, month, day)

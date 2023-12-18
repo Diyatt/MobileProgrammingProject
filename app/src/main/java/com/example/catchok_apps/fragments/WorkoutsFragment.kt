@@ -16,6 +16,7 @@ import com.example.catchok_apps.adapter.ItemWorkoutAdapter
 import com.example.catchok_apps.repository.workout.WorkoutViewModel
 import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentWorkoutsBinding
+import com.example.catchok_apps.repository.workout.model.Workout
 
 
 @AndroidEntryPoint

@@ -1,6 +1,7 @@
 package com.example.catchok_apps.repository.workout
 
 import com.example.catchok_apps.network.workout.WorkoutApi
+import com.example.catchok_apps.repository.workout.model.Workout
 import java.lang.Exception
 import javax.inject.Inject
 import javax.inject.Singleton

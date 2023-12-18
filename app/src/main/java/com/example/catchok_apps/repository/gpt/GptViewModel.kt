@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import com.example.catchok_apps.base.BaseViewModel
+import com.example.catchok_apps.repository.gpt.model.ChatResponse
 import javax.inject.Inject
 
 

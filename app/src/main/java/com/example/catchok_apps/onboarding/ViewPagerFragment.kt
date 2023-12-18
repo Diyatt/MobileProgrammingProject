@@ -1,7 +1,7 @@
-package kz.just_code.devmuscles.onboarding
+package com.example.catchok_apps.onboarding
 
-import kz.just_code.devmuscles.base.BaseFragment
-import kz.just_code.devmuscles.databinding.FragmentViewPagerBinding
+import com.example.catchok_apps.base.BaseFragment
+import com.example.catchok_apps.databinding.FragmentViewPagerBinding
 
 class ViewPagerFragment:BaseFragment<FragmentViewPagerBinding>(FragmentViewPagerBinding::inflate) {
 
