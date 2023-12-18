@@ -11,13 +11,13 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.auth.FirebaseAuth
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 import dagger.hilt.android.AndroidEntryPoint
-import kz.just_code.devmuscles.R
-import kz.just_code.devmuscles.base.BaseFragment
-import kz.just_code.devmuscles.databinding.FragmentProfileBinding
-import kz.just_code.devmuscles.firebase.Level
-import kz.just_code.devmuscles.firebase.UserDao
-import kz.just_code.devmuscles.repository.workout.model.Workout
-import kz.just_code.devmuscles.utilities.calculateDailyCalories
+import com.example.catchok_apps.R
+import com.example.catchok_apps.base.BaseFragment
+import com.example.catchok_apps.databinding.FragmentProfileBinding
+import com.example.catchok_apps.firebase.Level
+import com.example.catchok_apps.firebase.UserDao
+import com.example.catchok_apps.repository.workout.model.Workout
+import com.example.catchok_apps.utilities.calculateDailyCalories
 import java.lang.Math.ceil
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -92,9 +92,7 @@ class ProfileFragment :BaseFragment<FragmentProfileBinding>(FragmentProfileBindi
                 Level.BEGINNER -> level = "Beginner"
                 Level.INTERMEDIATE -> level = "Intermediate"
                 Level.ADVANCE -> level = "Advance"
-                else -> {
-                    level = "Not selected"
-                }
+
             }
             binding.level.text = level
             heightAnimation()

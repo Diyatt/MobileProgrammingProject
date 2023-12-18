@@ -4,8 +4,8 @@ package com.example.catchok_apps.fragments
 import androidx.navigation.fragment.navArgs
 import androidx.transition.TransitionInflater
 import com.bumptech.glide.Glide
-import kz.just_code.devmuscles.base.BaseFragment
-import kz.just_code.devmuscles.databinding.FragmentFullscreenBinding
+import com.example.catchok_apps.base.BaseFragment
+import com.example.catchok_apps.databinding.FragmentFullscreenBinding
 
 class FullscreenFragment:BaseFragment<FragmentFullscreenBinding>(FragmentFullscreenBinding::inflate) {
     private val args:FullscreenFragmentArgs by navArgs()
