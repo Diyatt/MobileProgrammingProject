@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FontStyle">
+        <item name="fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="FontStyle.Bold">
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+    <style name="FontStyle.Extra">
+        <item name="fontFamily">@font/open_sans_extra_bold</item>
+    </style>
+    <style name="FontStyle.SemiBold">
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+    <style name="Integral">
+        <item name="fontFamily">@font/integral_regular</item>
+    </style>
+
+    <style name="WhiteTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/white</item>
+    </style>
+
+    <style name="BlackBN" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="colorPrimary">@color/text_color</item>
+    </style>
+    
+    <style name="customChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+    </style>
+    
+    <style name="Theme.AnimatedSplash.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/main_bg</item>
+        <item name="postSplashScreenTheme">@style/Theme.DevMuscles</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="duration">2000</item>
+    </style>
+
+</resources>
+
