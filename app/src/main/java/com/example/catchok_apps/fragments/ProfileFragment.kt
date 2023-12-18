@@ -92,6 +92,7 @@ class ProfileFragment :BaseFragment<FragmentProfileBinding>(FragmentProfileBindi
                 Level.BEGINNER -> level = "Beginner"
                 Level.INTERMEDIATE -> level = "Intermediate"
                 Level.ADVANCE -> level = "Advance"
+                else -> {level = "Not selected"}
 
             }
             binding.level.text = level
