@@ -8,12 +8,12 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
-import kz.just_code.devmuscles.adapter.ItemMessageAdapter
-import kz.just_code.devmuscles.base.BaseFragment
-import kz.just_code.devmuscles.databinding.FragmentChatBinding
-import kz.just_code.devmuscles.repository.gpt.GptViewModel
-import kz.just_code.devmuscles.repository.gpt.model.Choice
-import kz.just_code.devmuscles.repository.gpt.model.Message
+import com.example.catchok_apps.adapter.ItemMessageAdapter
+import com.example.catchok_apps.base.BaseFragment
+import com.example.catchok_apps.databinding.FragmentChatBinding
+import com.example.catchok_apps.repository.gpt.GptViewModel
+import com.example.catchok_apps.repository.gpt.model.Choice
+import com.example.catchok_apps.repository.gpt.model.Message
 
 
 @AndroidEntryPoint
