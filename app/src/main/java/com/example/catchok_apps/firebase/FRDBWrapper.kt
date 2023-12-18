@@ -7,7 +7,6 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.example.catchok_apps.repository.workout.model.Workout
 
 abstract class FRDBWrapper<T> {
     private val db = FirebaseDatabase.getInstance()

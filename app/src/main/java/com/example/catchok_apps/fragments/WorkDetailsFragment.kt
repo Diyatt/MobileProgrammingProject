@@ -15,7 +15,6 @@ import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentWorkoutDetailsBinding
 import com.example.catchok_apps.firebase.UserDao
 import com.example.catchok_apps.repository.workout.WorkoutViewModel
-import com.example.catchok_apps.repository.workout.model.Workout
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

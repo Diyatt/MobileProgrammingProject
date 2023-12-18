@@ -11,7 +11,6 @@ import com.example.catchok_apps.R
 import com.example.catchok_apps.base.BaseWorkoutViewHolder
 import com.example.catchok_apps.databinding.ItemWorkoutBinding
 import com.example.catchok_apps.fragments.titlecaseFirstChar
-import com.example.catchok_apps.repository.workout.model.Workout
 
 class ItemWorkoutAdapter:ListAdapter<Workout, BaseWorkoutViewHolder<*>>(WorkoutDiffUtils()) {
 

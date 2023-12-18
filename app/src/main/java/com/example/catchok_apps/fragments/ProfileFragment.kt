@@ -16,9 +16,7 @@ import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentProfileBinding
 import com.example.catchok_apps.firebase.Level
 import com.example.catchok_apps.firebase.UserDao
-import com.example.catchok_apps.repository.workout.model.Workout
 import com.example.catchok_apps.utilities.calculateDailyCalories
-import java.lang.Math.ceil
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import javax.inject.Inject
