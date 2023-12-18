@@ -13,6 +13,7 @@ import com.example.catchok_apps.adapter.ItemRecommendedWorkoutAdapter
 import com.example.catchok_apps.R
 import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentWorkoutDetailsBinding
+import com.example.catchok_apps.firebase.SavedWorkout
 import com.example.catchok_apps.firebase.UserDao
 import com.example.catchok_apps.repository.workout.WorkoutViewModel
 import com.example.catchok_apps.repository.workout.model.Workout

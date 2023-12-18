@@ -23,6 +23,7 @@ android {
     namespace = "com.example.catchok_apps"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.catchok_apps"
         minSdk = 26
