@@ -3,8 +3,6 @@ package com.example.catchok_apps.repository.gpt
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.catchok_apps.network.gpt.GptApi
-import com.example.catchok_apps.repository.gpt.model.ChatResponse
-import com.example.catchok_apps.repository.gpt.model.Choice
 import com.example.catchok_apps.repository.gpt.model.Message
 import com.example.catchok_apps.repository.gpt.model.RequestBody
 import javax.inject.Inject

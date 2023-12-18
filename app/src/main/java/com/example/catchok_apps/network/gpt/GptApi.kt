@@ -1,10 +1,8 @@
 package com.example.catchok_apps.network.gpt
 
-import com.example.catchok_apps.repository.gpt.model.ChatResponse
 import com.example.catchok_apps.repository.gpt.model.RequestBody
 import retrofit2.Response
 import retrofit2.http.Body
-import retrofit2.http.Header
 import retrofit2.http.POST
 
 

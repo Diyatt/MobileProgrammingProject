@@ -3,8 +3,6 @@ package com.example.catchok_apps.base
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import com.example.catchok_apps.firebase.SavedWorkout
-import com.example.catchok_apps.repository.gpt.model.Choice
-import com.example.catchok_apps.repository.gpt.model.Message
 import com.example.catchok_apps.repository.workout.model.Workout
 import com.example.catchok_apps.utilities.AdDao
 

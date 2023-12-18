@@ -12,7 +12,6 @@ import com.example.catchok_apps.adapter.ItemMessageAdapter
 import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentChatBinding
 import com.example.catchok_apps.repository.gpt.GptViewModel
-import com.example.catchok_apps.repository.gpt.model.Choice
 import com.example.catchok_apps.repository.gpt.model.Message
 
 
