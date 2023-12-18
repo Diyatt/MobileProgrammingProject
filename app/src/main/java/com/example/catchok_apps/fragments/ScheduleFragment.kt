@@ -29,7 +29,7 @@ class ScheduleFragment: BaseFragment<FragmentScheduleBinding>(FragmentScheduleBi
         val adapter = ScheduleAdapter()
         binding.recyclerView.adapter = adapter
 
-        binding.calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
+        binding.calendarView.setOnDateChangeListener { view: Int, year: Int, month: Int, dayOfMonth: Int ->
             selectedDate = formatDate(dayOfMonth, month+1, year)
         }
         binding.selectBtn.setOnClickListener {
