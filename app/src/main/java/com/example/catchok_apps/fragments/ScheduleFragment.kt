@@ -5,13 +5,10 @@ import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
-import kz.just_code.devmuscles.adapter.ItemWorkoutAdapter
 import com.example.catchok_apps.adapter.ScheduleAdapter
 import com.example.catchok_apps.base.BaseFragment
 import com.example.catchok_apps.databinding.FragmentScheduleBinding
-import com.example.catchok_apps.firebase.SavedWorkout
 import com.example.catchok_apps.firebase.UserDao
-import kz.just_code.devmuscles.repository.workout.model.Workout
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
