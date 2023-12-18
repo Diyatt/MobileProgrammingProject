@@ -54,7 +54,7 @@
         android:label="WorkoutDetailsFragment" >
         <argument
             android:name="Workout"
-            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+            app:argType="com.example.catchok_apps.repository.workout.model.Workout" />
         <action
             android:id="@+id/action_workoutDetailsFragment_to_fullscreenFragment"
             app:destination="@id/fullscreenFragment" />
@@ -103,7 +103,7 @@
         android:label="FullscreenFragment" >
         <argument
             android:name="Workout_item"
-            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+            app:argType="com.example.catchok_apps.repository.workout.model.Workout" />
     </fragment>
     <dialog
         android:id="@+id/workoutDetailsBottomSheetFragment"
@@ -111,7 +111,7 @@
         android:label="WorkoutDetailsBottomSheetFragment" >
         <argument
             android:name="WorkoutItem"
-            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+            app:argType="com.example.catchok_apps.repository.workout.model.Workout" />
         <action
             android:id="@+id/action_workoutDetailsBottomSheetFragment_to_fullscreenFragment"
             app:destination="@id/fullscreenFragment" />
@@ -195,7 +195,7 @@
         android:label="StartWorkoutFragment" >
         <argument
             android:name="workoutItem"
-            app:argType="kz.just_code.devmuscles.repository.workout.model.Workout" />
+            app:argType="com.example.catchok_apps.repository.workout.model.Workout" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
