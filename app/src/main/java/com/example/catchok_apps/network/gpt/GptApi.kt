@@ -1,6 +1,5 @@
 package com.example.catchok_apps.network.gpt
 
-
 import com.example.catchok_apps.repository.gpt.model.ChatResponse
 import com.example.catchok_apps.repository.gpt.model.RequestBody
 import retrofit2.Response
@@ -14,5 +13,5 @@ interface GptApi {
     @POST("chat/completions")
     suspend fun getPrompt(
         @Body requestBody: RequestBody,
-    ): Response<ChatResponse>
+        ): Response<ChatResponse>
 }

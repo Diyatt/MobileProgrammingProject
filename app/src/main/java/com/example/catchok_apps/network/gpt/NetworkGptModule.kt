@@ -7,7 +7,6 @@ import dagger.hilt.components.SingletonComponent
 import com.example.catchok_apps.utilities.RetryInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import okhttp3.internal.http.RetryAndFollowUpInterceptor
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -32,13 +31,13 @@ object NetworkGptModule {
         .writeTimeout(30, TimeUnit.SECONDS)
         .connectTimeout(30, TimeUnit.SECONDS)
         .addInterceptor { chain ->
-            val newRequest: Request =
-                chain.request()
-                    .newBuilder()
-                    .addHeader("Content-Type", "application/json")
-                    .addHeader("Authorization", "Bearer $token").build()
-            chain.proceed(newRequest)
-        }.build()
+        val newRequest: Request =
+            chain.request()
+                .newBuilder()
+                .addHeader("Content-Type", "application/json")
+                .addHeader("Authorization", "Bearer $token").build()
+        chain.proceed(newRequest)
+    }.build()
 
 
     fun getRetrofit(): Retrofit {
